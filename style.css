@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+}
+.grid-cont{
+    display: grid;
+    grid-template-rows: auto 1fr auto; /*Header, Main, Footer*/
+    height: 100vh; /*Full viewport height*/
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color:#6F6AF7;
+    height: 70px;
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+nav .dappr{
+    width: 15%;
+}
+nav .dappr p{
+    font-family:Delius Unicase;
+    color: white;
+    float: left;
+    font-size:30px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    font-family: DM Sans;
+    font-size: 18px;
+    padding:20px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    background: white;
+    font-family: bold DM sans;
+}
+#searchInput {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.search-button svg {
+    width: 20px;
+    height: 20px;
+}
+.hamburger{
+    display: flex;
+    justify-content: flex-end;
+    width:30%;
+}
+.footer-section{
+    position: relative; /* Ensure footer has positioning context */
+    display: flex;
+    justify-content: flex-end;
+    grid-row-start: 3; /* Start footer at row 3 */
+    grid-row-end: 4;
+}  
+
+footer {
+    position: fixed;
+    width: 50px;
+    height:auto;
+    bottom: 0px; /*Adjust distance from the bottom */
+    right: 50px; /*Adjust distance from the right*/
+    z-index: 999; /*Ensure the image appears above other content */
+    /* Additional styles */
+}
+
+.main-section {
+    display: flex;
+    flex-direction:column;
+    margin:80px 0px;
+    padding-top: 20px;
+    width: 100%;
+  }
+.firstarea{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.img-area{
+    display: flex;
+    align-items: flex-start;
+    float: left;
+    width: 40%;
+    justify-content: center;
+}
+#img1{
+    height: 350px;
+}
+.text-area{
+    display: flex;
+    width: 60%;
+}
+textarea{
+    height: 338px;
+    width: 90%;
+    color:#6F7373;
+    font-size: 18px;
+    font-family: DM Sans;
+    resize: none;
+    background: #E5D8FF;
+    border: 2px solid #E5D8FF;
+    border-radius:10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#fb{
+    position: sticky;
+    top: 0; /* Adjust according to your navbar height */
+    height: 150px;
+    right: 50px;
+    z-index: 999;
+}
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 50px;
+    margin-top:20px; 
+    /* flex-direction: row; */
+}
+.boxes{
+    justify-content: space-around;
+    flex: 1; /* Each box takes up equal space */
+    /* margin-right: 10px; Add margin between boxes */
+    background-color: #ccc; /* Example background color for boxes */
+    padding: 10px; /* Padding */
+    margin: 20px;
+    height: 80px;
+    border-radius: 10px;
+    font-family: DM Sans;
+    color: white;
+    text-align: left;
+    padding-top:20px;
+    letter-spacing: 1.5px;
+    line-height: 30px;   
+}
+.bg-blue{
+    display: flex;
+    flex-wrap: wrap;
+    background:#483EFF;
+    border-radius: 10px;
+    margin: 100px 60px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20%;
+    margin:30px 20px;
+}
+.box{
+    text-align: center;
+    color: white;
+    font-family:DM Sans;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin: 30px 20px;
+
+}
+#box1{
+    background: #BCE0F6;
+    color: black;
+    border:2px solid #BCE0F6
+
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    position: relative;
+  }
+  
+.details-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative; /* Ensure positioning context for absolute positioning */
+    padding-right: 450px;
+}
+  
+.button {
+    position: absolute;
+    bottom: 10px; /* Adjust bottom position */
+    right: 10px; /* Adjust right position */
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#btnarrow{
+    height: 10px;
+}
+.details-box p{
+    line-height: 2.0;
+    font-size: 18px;
+}
+.details-box h2{
+    font-size:30px;
+}
